@@ -3,5 +3,6 @@
     <dimen name="AlturaImagen">90dp</dimen>
     <dimen name="colapse">200dp</dimen>
     <dimen name="Linea">1dp</dimen>
-    <dimen name="colapseBar">160dp</dimen>
+    <dimen name="colapseBar">160dp </dimen>
+    <dimen name="Imagen">160dp</dimen>
 </resources>

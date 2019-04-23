@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.DetalleActivity"
+        <activity android:name=".Activities.activities.DetalleActivity"
             android:label="@string/Detalle"
             android:parentActivityName=".Activities.activities.MainActivity"
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden"></activity>

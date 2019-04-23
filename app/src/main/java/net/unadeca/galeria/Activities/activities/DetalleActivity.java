@@ -1,4 +1,4 @@
-package net.unadeca.galeria.Activities;
+package net.unadeca.galeria.Activities.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -29,6 +29,8 @@ public class DetalleActivity extends AppCompatActivity {
         coordinatorLayout = findViewById(R.id.coordinador);
         viewPager = findViewById(R.id.viewpager);
         imagen = findViewById(R.id.imagen);
+
+
 
 
         if(getIntent().hasExtra("imagen")){
