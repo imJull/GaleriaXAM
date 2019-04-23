@@ -94,7 +94,8 @@ public class DetalleActivity extends AppCompatActivity {
             agregar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    try{
+                    try{ validar();
+                        guardar();
 
                     }catch (Exception e){
                         Snackbar.make(coordinatorLayout, e.getMessage(), Snackbar.LENGTH_INDEFINITE).show();

@@ -7,6 +7,7 @@ import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
 import net.unadeca.galeria.Activities.database.GaleriaDB;
+import net.unadeca.galeria.Activities.database.models.Imagenes;
 
 @Table(database = GaleriaDB.class)
 public class Comentarios extends BaseModel {
