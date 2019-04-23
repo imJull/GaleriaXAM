@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Galeria</string>
+    <string name="action_settings">Settings</string>
+    <string name="TituloGal">Locos Locos</string>
+    <string name="tituloLista">Yeah Aight</string>
+    <string name="Titulo">Nombre Imagen</string>
+    <string name="Titulolista">lista</string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="Comentarios">Comentarios</string>
+    <string name="AgregeComentario">Agregue COmentario</string>
+    <string name="AGR">AGREGAR</string>
+    <string name="Detalle">detalle</string>
+
+</resources>
