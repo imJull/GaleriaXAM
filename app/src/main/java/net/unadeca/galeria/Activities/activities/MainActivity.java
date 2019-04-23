@@ -78,13 +78,26 @@ public class MainActivity extends AppCompatActivity {
     private void testBaseDatos() {
         Delete.table(Imagenes.class);
         Imagenes imagen;
-        Imagenes imagen2;
-        for (int a = 0; a < 4; a++) {
+        for (int a = 0; a < 6; a++) {
             imagen = new Imagenes();
+            if (a <= 0){
             imagen.imagen = "https://i.pinimg.com/originals/75/00/30/7500302b182070761e3ac8269a8c4443.jpg";
-           // imagen = "https://www.thoughtco.com/skateboard-logos-pics-archive-4123151?utm_source=pinterest";
+            imagen.titulo = "AntiHero";}
+            else if (a == 1){
+            imagen.imagen = "https://steamuserimages-a.akamaihd.net/ugc/785162250415551722/518EEB89F420FCB94D620D6E500C127D482B878B/";
+            imagen.titulo = "Santa Cruz";}
+            else if (a == 2){
+                imagen.imagen ="https://sohimages.com/images/images_soh/wrldindsflameboy1-2.jpg";
+                imagen.titulo = "World Industries";}
+                else if ( a == 3){
+                    imagen.imagen = "https://acclaimmag.com/wp-content/uploads/2012/07/163801_500_375.jpeg";
+                    imagen.titulo = "Girl Skateboards";}
+                    else {imagen.imagen = "findViewById(R.drawable.ic_add_a_photo_black_24dp)";
+                    imagen.titulo = "Desconocido";}
+
+
             imagen.descripcion = "Empresa top en la industria "; //+ (a + 1);
-            imagen.titulo = "AntiHero " + (a + 1);
+            //imagen.titulo = "AntiHero " + (a + 1);
             imagen.save();
 
 
@@ -98,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
 
     //Lista de imagenes
     private List<Imagenes> getImagenes() {
-        
         return SQLite.select().from(Imagenes.class).queryList();
     }
 }
